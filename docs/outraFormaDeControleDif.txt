@@ -1,0 +1,35 @@
+https://www.wilselby.com/diy-autonomous-vehicle-project/drive-wire-development/
+
+
+
+void cmdVelCB (const geometry_msgs :: Twist & twist)
+{
+	int gain = 700;
+  float left_wheel_data = gain*(twist.linear.x + twist.angular.z*L);
+  float right_wheel_data = gain*(twist.linear.x - twist.angular.z*L);
+  
+  if (left_wheel_data >= 0)
+  {
+    analogWrite(ENA, abs(left_wheel_data));
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+  }
+  else
+  {
+    analogWrite(ENA, abs(left_wheel_data));
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
+  }
+  if (right_wheel_data >= 0)
+  {
+    analogWrite(ENB, abs(right_wheel_data));
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, HIGH);
+  }
+  else
+  {
+    analogWrite(ENB, abs(right_wheel_data));
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, LOW);
+  }
+}
