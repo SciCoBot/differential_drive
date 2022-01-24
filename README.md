@@ -36,7 +36,7 @@ Dessa forma, as possibilidades são:
 - DIFFERENTIAL_DRIVE_DEBUG: utilizado para habilitar ou desabilitar mensagens debug padrão. Utilize 1 para habilitar. Por default é igual a 0.
 ### Funções
 
-- **differentialForPWM(linear, angular)**: recebe os valores diferenciais (v e w) e relaciona de forma grosseira com o movimento do robô, enviando os comandos aos motores conforme a lógica descrita em "Sobre".
+- **DifferentialDrive::differentialForPWM(linear, angular)**: recebe os valores diferenciais (v e w) e relaciona de forma grosseira com o movimento do robô, enviando os comandos aos motores conforme a lógica descrita em "Sobre".
 
 ## Como utilizar
 
