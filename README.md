@@ -29,16 +29,16 @@ Dessa forma, as possibilidades são:
 - frente inclinado para esquerda;
 - reverso inclinado para direita;
 - reverso inclinado para esquerda;
-- Parado
+- parado.
 
 ## Funções
 
-- differentialForPWM(linear, angular): recebe os valores diferenciais (v e w) e relaciona de forma grosseira com o movimento do robô, enviando os comandos aos motores conforme a lógica descrita em "Sobre".
+- **differentialForPWM(linear, angular)**: recebe os valores diferenciais (v e w) e relaciona de forma grosseira com o movimento do robô, enviando os comandos aos motores conforme a lógica descrita em "Sobre".
 
 ## Como utilizar
 
 - Baixe e adicione a partir da IDE arduino.
--Teste o exemplo.
+- Teste o exemplo.
 
 ## Implementações Futuras
 
