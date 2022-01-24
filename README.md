@@ -4,6 +4,13 @@
 [![platform badge](https://img.shields.io/badge/platform-Arduino-orange.svg)](https://github.com/arduino)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/JoaoLopesF/SerialDebug/blob/master/LICENSE.txt)
 
+## Contents
+
+- [Sobre](#sobre)
+- [Funções](#funções)
+- [Como Utilizar](#como-utilizar)
+- [Implementações Futuras](#implementações-futuras)
+
 Biblioteca para controle diferencial de um robô a partir de um Arduino Due.
 Foi pensada para ser usada junto com [teleop_twist_keyboard](https://index.ros.org/r/teleop_twist_keyboard/#foxy).
 
@@ -24,15 +31,15 @@ Dessa forma, as possibilidades são:
 - reverso inclinado para esquerda;
 - Parado
 
-##Funções:
+## Funções
 
 - differentialForPWM(linear, angular): recebe os valores diferenciais (v e w) e relaciona de forma grosseira com o movimento do robô, enviando os comandos aos motores conforme a lógica descrita em "Sobre".
 
-##Como utilizar
+## Como utilizar
 
 - Baixe e adicione a partir da IDE arduino.
 -Teste o exemplo.
 
-#Correções
+## Implementações Futuras
 
 - Implementar o CÁLCULO da velocidade diferencial para controle do motor.
