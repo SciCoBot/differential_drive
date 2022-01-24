@@ -11,10 +11,12 @@
 - [Como Utilizar](#como-utilizar)
 - [Implementações Futuras](#implementações-futuras)
 
-Biblioteca para controle diferencial de um robô a partir de um Arduino Due.
-Foi pensada para ser usada junto com [teleop_twist_keyboard](https://index.ros.org/r/teleop_twist_keyboard/#foxy).
+
 
 ## Sobre
+
+Biblioteca para controle diferencial de um robô a partir de um Arduino Due.
+Foi pensada para ser usada junto com [teleop_twist_keyboard](https://index.ros.org/r/teleop_twist_keyboard/#foxy).
 
 **Assume-se que a base móvel (robô) é controlada pelo envio de comandos de velocidade desejados na forma de: velocidade linear (*v*), velocidade angular (*w*)**.  *v* é dado em metros por segundo e é responsável pela translação, equanto que *w* é dado em radianos por segundo e é reponsável pela parte que faz o robô virar.
 
