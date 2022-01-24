@@ -11,8 +11,6 @@
 - [Como Utilizar](#como-utilizar)
 - [Implementações Futuras](#implementações-futuras)
 
-
-
 ## Sobre
 
 Biblioteca para controle diferencial de um robô a partir de um Arduino Due.
